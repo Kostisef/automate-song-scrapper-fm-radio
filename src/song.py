@@ -1,5 +1,6 @@
 # import file_management
 from file_management import write_to_file, update_the_song_dict
+from mysql_management import write_to_db
 
 
 class Song:
@@ -21,7 +22,8 @@ def add_new_song(song_dictionary, song_obj: Song):
     song_full_title = song_obj.full_title
     xx = find_song(song_dictionary, song_full_title)
     if xx is None:
-        write_to_file(song_obj)
+        write_to_file(song_obj)  # write the new song to .txt file
+        write_to_db(song_obj)  # add new song to the appropriate MySQL table
         print('** Song ADDED successfully. **\n')
         song_dictionary = update_the_song_dict(song_dictionary, song_obj)
     else:

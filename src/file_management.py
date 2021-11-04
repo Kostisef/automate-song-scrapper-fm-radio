@@ -1,9 +1,8 @@
-# from song import Song
-# from song import Song
+filename = "../song_list.txt"
 
 
 def write_to_file(song_object):
-    f = open("../song_list.txt", "a+")
+    f = open(filename, "a+")
     f.write(song_object.full_title)
     f.write("\n")
     f.write(song_object.yt_link)
@@ -11,15 +10,15 @@ def write_to_file(song_object):
     f.close()
 
 
-def get_content_from_file(filename):
+def get_content_from_file():
     f = open(filename, "r")
     content = f.read()
     f.close()
     return content
 
 
-def load_the_song_dict(filename):
-    content = get_content_from_file(filename)
+def load_the_song_dict():
+    content = get_content_from_file()
 
     song_list_temp = content.split("\n")
     song_list_temp = list(filter(None, song_list_temp))

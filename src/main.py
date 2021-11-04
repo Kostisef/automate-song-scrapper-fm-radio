@@ -7,7 +7,7 @@ from datetime import datetime
 
 def main():
     # Load any songs stored in .txt file
-    my_song_dict = load_the_song_dict("../song_list.txt")
+    my_song_dict = load_the_song_dict()
     # Make the connection between Selenium - website
     driver = selenium_connect("http://www.athensparty.com/wonder/player")
 

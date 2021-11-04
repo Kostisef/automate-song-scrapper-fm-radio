@@ -6,7 +6,6 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
-song_list.txt
 src/__pycache__/
 .idea/
 *.txt

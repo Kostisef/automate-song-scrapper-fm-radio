@@ -3,7 +3,7 @@
 
 
 def write_to_file(song_object):
-    f = open("song_list.txt", "a+")
+    f = open("../song_list.txt", "a+")
     f.write(song_object.full_title)
     f.write("\n")
     f.write(song_object.yt_link)

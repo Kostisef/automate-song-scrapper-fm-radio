@@ -8,4 +8,4 @@
 /httpRequests/
 song_list.txt
 src/__pycache__/
-song_list.txt
+.idea/

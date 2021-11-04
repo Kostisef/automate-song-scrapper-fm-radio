@@ -7,6 +7,7 @@ Just run src/main.py and every 90 seconds the code will extract current and next
 _______________________________________________________________________________________________
 #### FUTURE TASKS
 * Implement a MySQL Connection and store all the info in appropriate tables (no need for .txt files)
+* GUI
 _______________________________________________________________________________________________
 
 **Format of each recording:**
